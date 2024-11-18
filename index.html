@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./img/BookMarker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+     
+
+  <section class="home ">
+    
+       
+      <div class="container">
+        <h1 class=" p-4 text-center">Bookmarker</h1>
+        <div id="dot"></div>
+          <h3 ><i class="fa-solid fa-bookmark"></i>  Bookmark your favorite sites  <i class="fa-solid fa-bookmark"></i> </h3>
+         <div class="form">
+          <div class="mb-3">
+            <label for="SiteName" class="form-label">  <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+            <input oninput="validationSiteName()" type="text" class="form-control" id="SiteName" placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3">
+            <label for="SiteUrl" class="form-label">  <i class="fa-solid fa-link pe-2"></i> Site URL</label>
+            <input oninput="validationSiteUrl()" type="text" class="form-control" id="SiteUrl" placeholder="Website URL">
+          </div>
+         <div class="btns text-center pb-4 pt-2" >
+          <button type="button" onclick="sumbitBook()"   data-bs-toggle="modal" data-bs-target="#exampleModal">Sumbit</button>
+          <!-- Modal -->
+          <div id="btns">
+
+          </div>
+ 
+         </div>
+       
+              
+         </div>
+    <div id="dot"></div>
+
+     <div class="table ">
+      <table class="table">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="text-center" id="demo">
+         
+         
+        </tbody>
+      </table>
+     </div>
+      </div>
+      
+      
+     
+   
+   
+  </section>
+
+ 
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

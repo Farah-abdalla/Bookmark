@@ -1,0 +1,201 @@
+:root{
+    --main-color:var(--main-color);
+}
+*::selection{
+    background-color: #FEC260;
+}
+
+.home{
+ background-color: #F7ECDE;
+ min-height: 100vh;
+ 
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #352e28;
+    position: relative;
+    z-index: 999;
+    
+}
+h1::before{
+    content: "";
+   
+    background-color: #FEC260;
+    position: absolute;
+    width: 280px;
+    height: 20%;
+    transform: translateX(-50%);
+   
+    bottom: 30%;
+    left: 50%;
+    z-index: -1;
+    transition: all 1s;
+  }
+ 
+h1:hover::before{
+    height: 35%;
+    
+}
+h3{
+    font-family: "Righteous", sans-serif;
+    font-size:25px ;
+    line-height:30px ;
+    font-weight: 500;
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(60, 165, 92, 0.788), rgb(202, 191, 70) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+ i{
+    font-size:25px ;
+    line-height:25px ;
+    font-weight: 900;
+}
+#dot {
+    border-style: dashed ;
+    border-color:var(--main-color);
+    border-width: 1px;
+   
+    margin: auto;
+}
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size:16px ;
+    font-weight:600 ;
+    line-height:24px ;
+    color:var(--main-color);
+}
+label i{
+    font-size:16px ;
+    font-weight:900 ;
+    line-height:16px ;
+    color:var(--main-color);
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #e6a327;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(240, 208, 148, 0.986);
+
+}
+.btns button{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+    background-color: #d1512d;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    color: white;
+    width: 150px;
+    height: 37px;
+    transition: all 0.2s;
+
+ }
+ button:hover{
+    background-color: #BB4120;
+    
+    
+ }
+ #btnVisit{
+    background-color: #9eb23b;
+    border-color: #9eb23b;
+    width: 80px;
+    height: 40px;
+    transition: all 0.2s;
+    border-radius: 7px;
+    color: white;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+   
+  
+ }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ #btnVisit:hover{
+background-color: #8a9e23;
+border-color: #6e8018;
+ }
+ #btnDelete{
+    background-color: #eb1d36;
+    border-color:  #eb1d36;
+    width: 100px;
+    height: 40px;
+    transition: all 0.2s;
+    border-radius: 7px;
+    color: white;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+ }
+ #btnDelete:hover{
+ background-color: #d30820;
+ border-color:  #ba081d;
+ }
+ #btnVisit i,#btnDelete i{
+
+    font-size: 14px;
+    
+ }
+ 
+ .table{
+ padding-block: 50px;
+
+ }
+ thead , tbody{
+    font-family: "PT Sans Caption", sans-serif;
+    /* font-size:16px ;
+    font-weight:700 ;
+    line-height:24px ;
+    color:olive; */
+ }
+ /* tbody{
+    font-family: "PT Sans Caption", sans-serif; */
+    /* font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+    color:olive;
+ } */
+ .modal-body p{
+    font-family: "Bree Serif", serif;
+      font-size:21px ;
+    font-weight:400 ;
+    line-height:27px ;
+ }
+ .modal-body h4{
+    font-family: "PT Sans Caption", sans-serif;
+     font-size:18px ;
+    font-weight:400 ;
+    line-height:27px ;
+ }
+ .modal-body h4 i{
+    font-size: 18px;
+    color: #BB4120;
+ }
+ .modal-header .first i{
+  
+    color:#F15F5D;
+    margin: 10px;
+ }
+ .modal-header  .second i{
+   
+    color: #FEBE2E;
+    margin: 10px;
+ }
+ .modal-header .third i{
+   
+    color: #4DB748;
+    margin: 10px;
+ }
